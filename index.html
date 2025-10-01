@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stone Path Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #4f46e5, #7c3aed);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    header button {
+      padding: 12px 24px;
+      background: white;
+      color: #4f46e5;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .pillars, .features, .how {
+      display: grid;
+      gap: 20px;
+    }
+    .pillars {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .pillar, .feature, .step {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .pillar h3 {
+      color: #4f46e5;
+      margin-bottom: 10px;
+    }
+    .features {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .how {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    footer {
+      background: #4f46e5;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    footer button {
+      padding: 12px 24px;
+      background: white;
+      color: #4f46e5;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Stone Path Project</h1>
+    <p>Empowering Students for Life Beyond High School</p>
+    <button onclick="alert('Sign up feature coming soon!')">Get Started Free</button>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>About SPP</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      The Stone Path Project is a free, holistic platform for high school students,
+      parents, and educators. Built around eight pillars, it provides tools and
+      resources to support academics, wellbeing, and future readiness.
+    </p>
+  </section>
+
+  <!-- Eight Pillars -->
+  <section>
+    <h2>Eight Pillars</h2>
+    <div class="pillars">
+      <div class="pillar"><h3>Self-Discovery</h3><p>Understand strengths, interests, and goals.</p></div>
+      <div class="pillar"><h3>Mental Health</h3><p>Daily affirmations, mood tracker, and support.</p></div>
+      <div class="pillar"><h3>Academics</h3><p>Homework planner, reminders, and tutoring.</p></div>
+      <div class="pillar"><h3>Friendships</h3><p>Safe groups, chat, and event planning.</p></div>
+      <div class="pillar"><h3>Relationships</h3><p>Guidance on communication and consent.</p></div>
+      <div class="pillar"><h3>Bullying Support</h3><p>Anonymous reporting and coping resources.</p></div>
+      <div class="pillar"><h3>Physical Health</h3><p>Fitness challenges and nutrition tips.</p></div>
+      <div class="pillar"><h3>Financial Readiness</h3><p>Budgeting tools, allowances, and career prep.</p></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature"><h3>Task Planner</h3><p>Organize homework, exams, and reminders.</p></div>
+      <div class="feature"><h3>Mood Tracker</h3><p>Log emotions daily with simple tools.</p></div>
+      <div class="feature"><h3>Tutoring</h3><p>Book tutors and join study sessions easily.</p></div>
+      <div class="feature"><h3>Webinars</h3><p>Join educational webinars on life skills and careers.</p></div>
+      <div class="feature"><h3>AI Assistant</h3><p>Get instant answers to questions and guidance.</p></div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section>
+    <h2>How It Works</h2>
+    <div class="how">
+      <div class="step"><h3>1. Sign Up</h3><p>Create your free account as student, parent, or educator.</p></div>
+      <div class="step"><h3>2. Explore Resources</h3><p>Discover tools, groups, and personalized content.</p></div>
+      <div class="step"><h3>3. Grow Together</h3><p>Learn, connect, and thrive with community support.</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Ready to start your journey?</h2>
+    <button onclick="alert('Sign up feature coming soon!')">Sign Up</button>
+    <p style="margin-top:20px; font-size:14px;">&copy; <span id="year"></span> Stone Path Project</p>
+  </footer>
+
+  <script>
+    // auto update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
